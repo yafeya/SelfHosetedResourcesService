@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedResourcesService", "SelfHostedResourcesService\SelfHostedResourcesService.csproj", "{AF5CE4D9-7DE5-4E02-8790-95E21C09A31A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostedResourceService", "SelfHostedResourceService\SelfHostedResourceService.csproj", "{F3A05DF2-0B87-4C0D-90DF-926A1AEFCE31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourcesClient", "ResourcesClient\ResourcesClient.csproj", "{EAE396CD-41E4-4886-8181-CDDE3A0E50F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF5CE4D9-7DE5-4E02-8790-95E21C09A31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF5CE4D9-7DE5-4E02-8790-95E21C09A31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF5CE4D9-7DE5-4E02-8790-95E21C09A31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF5CE4D9-7DE5-4E02-8790-95E21C09A31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A05DF2-0B87-4C0D-90DF-926A1AEFCE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A05DF2-0B87-4C0D-90DF-926A1AEFCE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A05DF2-0B87-4C0D-90DF-926A1AEFCE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A05DF2-0B87-4C0D-90DF-926A1AEFCE31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE396CD-41E4-4886-8181-CDDE3A0E50F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE396CD-41E4-4886-8181-CDDE3A0E50F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE396CD-41E4-4886-8181-CDDE3A0E50F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE396CD-41E4-4886-8181-CDDE3A0E50F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

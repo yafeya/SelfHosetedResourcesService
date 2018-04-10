@@ -41,6 +41,11 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# temp files
+.vs/*
+
 # build result
-/SelfHostedResourcesService/bin/
-/SelfHostedResourcesService/obj/
+/SelfHostedResourceService/bin/
+/SelfHostedResourceService/obj/
+/ResourcesClient/bin/
+/ResourcesClient/obj/
