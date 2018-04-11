@@ -1,35 +1,20 @@
-﻿using Keysight.CommunicationsFabric.Protocol;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
+﻿using System;
+using DiscoveryService.Interop;
 
 namespace SelfHostedResourceService
 {
     public class ResourcesService : IResourcesService
     {
-        private DiscoveryServiceClient mClient = new DiscoveryServiceClient();
-
+        private IolsClient mClient = new IolsClient();
+        
         public string GetResources()
         {
-            string json = Consts.EmptyJsonArray;
-            var request = new KcfRequest
-            {
-                MethodName = Consts.GetSnapshot_Method,
-                Data = new ArgMap()
-            };
-            var response = mClient.CallApi(request);
+            return mClient.GetResources();
+        }
 
-            var devicesRaw = response.Data[Consts.Devices];
-            if (devicesRaw != null && devicesRaw is ArgList)
-            {
-                var devicesListRaw = devicesRaw as ArgList;
-                json = Json.Encode(devicesListRaw, 4);
-            }
-
-            return json;
+        public string SendReadCommand(string address, string command)
+        {
+            return mClient.SendReadCommand(address, command);
         }
     }
 }

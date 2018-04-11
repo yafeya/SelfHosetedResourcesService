@@ -1,7 +1,6 @@
-﻿using Keysight.CommunicationsFabric.Protocol;
+﻿using DiscoveryService.Interop;
 using System;
 using System.ServiceModel;
-using System.Threading.Tasks;
 
 namespace SelfHostedResourceService
 {
@@ -16,7 +15,7 @@ namespace SelfHostedResourceService
                     host.Open();
                 }
                 Console.WriteLine("Server Started...");
-                
+
                 Console.ReadKey();
             }
         }

@@ -12,5 +12,8 @@ namespace SelfHostedResourceService
     {
         [OperationContract]
         string GetResources();
+
+        [OperationContract]
+        string SendReadCommand(string address, string command);
     }
 }

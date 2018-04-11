@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfHostedResourceService
+namespace DiscoveryService.Interop
 {
-    public class DiscoveryServiceClient
+    public class DiscoveryServiceApiClient
     {
         const string DiscoveryServiceName = "Connectivity.InstrumentDiscoveryService";
         const int DefaultConnectionTimeout = 5000;
 
-        public DiscoveryServiceClient()
+        public DiscoveryServiceApiClient()
         {
             Initialize();
         }
