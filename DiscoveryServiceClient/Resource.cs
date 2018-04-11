@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DiscoveryService.Interop
 {
-    class Resource
+    public class Resource
     {
         public Resource() : this(null)
         { }
@@ -17,6 +17,7 @@ namespace DiscoveryService.Interop
             if (argmap != null)
             {
                 PersistentId = argmap.GetString("PersistentId", string.Empty);
+                InstrumentInfo = argmap.GetString("UniqueInstrumentIdentity", string.Empty);
                 Manufacturer = argmap.GetString("Manufacturer", string.Empty);
                 Model = argmap.GetString("Model", string.Empty);
                 SerialNumber = argmap.GetString("SerialNumber", string.Empty);
@@ -25,9 +26,15 @@ namespace DiscoveryService.Interop
                 VisaAddress = argmap.GetString("VisaAddress", string.Empty);
                 SiclAddress = argmap.GetString("SiclAddress", string.Empty);
             }
+
+            if (string.IsNullOrEmpty(InstrumentInfo))
+            {
+                InstrumentInfo = PersistentId;
+            }
         }
 
         public string PersistentId { get; set; } = string.Empty;
+        public string InstrumentInfo { get; set; } = string.Empty;
         public string Manufacturer { get; set; } = string.Empty;
         public string Model { get; set; } = string.Empty;
         public string SerialNumber { get; set; } = string.Empty;
@@ -40,6 +47,7 @@ namespace DiscoveryService.Interop
         {
             var argmap = new ArgMap();
             argmap["Id"]            = PersistentId;
+            argmap["InstrumentInfo"] = InstrumentInfo;
             argmap["Manufacturer"]  = Manufacturer;
             argmap["Model"]         = Model;
             argmap["SerialNumber"]  = SerialNumber;

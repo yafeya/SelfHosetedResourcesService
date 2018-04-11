@@ -14,7 +14,7 @@ namespace ResourcesManagerService
 
         private IolsClient mIolsClient = new IolsClient();
 
-        public string Get()
+        public IEnumerable<Resource> Get()
         {
             return mIolsClient.GetResources();
         }
@@ -35,7 +35,7 @@ namespace ResourcesManagerService
         }
 
         [HttpPost]
-        public string SendReadCommand(CommandRequest request)
+        public ScpiResult SendReadCommand(CommandRequest request)
         {
             var address = request.Address;
             var command = request.Command;

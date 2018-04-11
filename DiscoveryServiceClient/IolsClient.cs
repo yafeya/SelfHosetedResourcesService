@@ -12,16 +12,16 @@ namespace DiscoveryService.Interop
     {
         private DiscoveryServiceApiClient mClient = new DiscoveryServiceApiClient();
 
-        public string GetResources()
+        public IEnumerable<Resource> GetResources()
         {
-            string json = KnownStrings.EmptyJsonArray;
             var request = new KcfRequest
             {
                 MethodName = KnownStrings.GetSnapshot_Method,
                 Data = new ArgMap()
             };
             var response = mClient.CallApi(request);
-            var resourceList = new ArgList();
+
+            var resourceList = new List<Resource>();
 
             var devicesRaw = response.Data[KnownStrings.Devices] as ArgList;
 
@@ -37,21 +37,17 @@ namespace DiscoveryService.Interop
                 FillResourceList(resourceList, chassisesRaw);
             }
 
-            json = Json.Encode(resourceList, 4);
-
-            return json;
+            return resourceList;
         }
 
-        public string SendReadCommand(string address, string command)
+        public ScpiResult SendReadCommand(string address, string command)
         {
             var commandCommunicator = new CommandCommunicator();
             var result = commandCommunicator.SendReadCommand(address, command);
-            var arg = result.ToArgMap();
-            var json = Json.Encode(arg, 4);
-            return json;
+            return result;
         }
 
-        private static void FillResourceList(ArgList resourceList, ArgList rawList)
+        private static void FillResourceList(List<Resource> resourceList, ArgList rawList)
         {
             foreach (var raw in rawList)
             {
@@ -59,7 +55,7 @@ namespace DiscoveryService.Interop
                 if (deviceRaw != null)
                 {
                     var resource = new Resource(deviceRaw);
-                    resourceList.Add(resource.ToArgMap());
+                    resourceList.Add(resource);
                 }
             }
         }

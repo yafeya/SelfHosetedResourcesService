@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscoveryService.Interop;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -11,9 +12,9 @@ namespace SelfHostedResourceService
     public interface IResourcesService
     {
         [OperationContract]
-        string GetResources();
+        IEnumerable<Resource> GetResources();
 
         [OperationContract]
-        string SendReadCommand(string address, string command);
+        ScpiResult SendReadCommand(string address, string command);
     }
 }

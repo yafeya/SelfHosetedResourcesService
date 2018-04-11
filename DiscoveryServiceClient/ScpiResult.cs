@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DiscoveryService.Interop
 {
-    class ScpiResult
+    public class ScpiResult
     {
         public bool Succeed { get; set; } = false;
         public string Message { get; set; } = string.Empty;

@@ -1,5 +1,6 @@
 ﻿using System;
 using DiscoveryService.Interop;
+using System.Collections.Generic;
 
 namespace SelfHostedResourceService
 {
@@ -7,12 +8,12 @@ namespace SelfHostedResourceService
     {
         private IolsClient mClient = new IolsClient();
         
-        public string GetResources()
+        public IEnumerable<Resource> GetResources()
         {
             return mClient.GetResources();
         }
 
-        public string SendReadCommand(string address, string command)
+        public ScpiResult SendReadCommand(string address, string command)
         {
             return mClient.SendReadCommand(address, command);
         }
