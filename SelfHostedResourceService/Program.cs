@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Keysight.CommunicationsFabric.Protocol;
+using System;
 using System.ServiceModel;
+using System.Threading.Tasks;
 
 namespace SelfHostedResourceService
 {

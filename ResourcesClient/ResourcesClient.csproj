@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\ResourceService\Reference.cs">
+    <Compile Include="Service References\ResourcesService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -55,31 +55,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\ResourceService\item.xsd">
+    <None Include="Service References\ResourcesService\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ResourceService\item1.xsd">
+    <None Include="Service References\ResourcesService\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ResourceService\ResourcesService.wsdl" />
+    <None Include="Service References\ResourcesService\ResourcesService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ResourceService\" />
+    <WCFMetadataStorage Include="Service References\ResourcesService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ResourceService\item.disco" />
+    <None Include="Service References\ResourcesService\item.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ResourceService\configuration91.svcinfo" />
+    <None Include="Service References\ResourcesService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ResourceService\configuration.svcinfo" />
+    <None Include="Service References\ResourcesService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ResourceService\Reference.svcmap">
+    <None Include="Service References\ResourcesService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

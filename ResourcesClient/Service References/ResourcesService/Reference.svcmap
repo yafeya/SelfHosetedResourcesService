@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2cb9bb1b-e2ed-4761-a915-83c7ca33d9b4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="64d4eb24-cd20-4c00-bc9f-2ddab365f6c8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:8080/SelfHostedResourceService/ResourcesService/" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ResourcesService.wsdl" MetadataType="Wsdl" ID="a9976fbe-e207-4956-b2ad-0c3ded0a9e6c" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?wsdl" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="ccd0d155-53ac-4d11-ae39-a50a5fa4df47" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?disco" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="8d85b895-408a-4f23-b91b-d179edf288df" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?xsd=xsd0" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="6aa572a2-0ca0-4563-830c-40bcda66a04d" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?xsd=xsd1" />
+    <MetadataFile FileName="ResourcesService.wsdl" MetadataType="Wsdl" ID="ad3ca777-1f3e-4e44-968f-f730b1d58362" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="af2ed80b-f803-4d28-8f7f-88f28f8c6802" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="cdf412df-f532-44fc-b146-71ee9c8dfd34" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="809c8f2d-92ac-41f3-a431-f1de449c5c1b" SourceId="1" SourceUrl="http://localhost:8080/SelfHostedResourceService/ResourcesService/?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
