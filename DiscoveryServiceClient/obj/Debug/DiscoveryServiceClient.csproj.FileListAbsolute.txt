@@ -1,6 +1,6 @@
 D:\MyGitProjects\SelfHostedResourcesService\DiscoveryServiceClient\bin\Debug\DiscoveryServiceClient.dll
 D:\MyGitProjects\SelfHostedResourcesService\DiscoveryServiceClient\bin\Debug\DiscoveryServiceClient.pdb
+D:\MyGitProjects\SelfHostedResourcesService\DiscoveryServiceClient\bin\Debug\Agilent.TMFramework.InstrumentIO.VisaInterop.dll
 D:\MyGitProjects\SelfHostedResourcesService\DiscoveryServiceClient\bin\Debug\Keysight.CommunicationsFabric.dll
 D:\MyGitProjects\SelfHostedResourcesService\DiscoveryServiceClient\obj\Debug\DiscoveryServiceClient.dll
 D:\MyGitProjects\SelfHostedResourcesService\DiscoveryServiceClient\obj\Debug\DiscoveryServiceClient.pdb
-D:\MyGitProjects\SelfHostedResourcesService\DiscoveryServiceClient\bin\Debug\Agilent.TMFramework.InstrumentIO.VisaInterop.dll

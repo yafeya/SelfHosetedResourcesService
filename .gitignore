@@ -51,3 +51,5 @@ Thumbs.db
 /ResourcesClient/obj/
 /DiscoveryServiceClient/bin/
 /DiscoveryServiceClient/obj/
+/ResourcesManagerService/bin/
+/ResourcesManagerService/obj/
